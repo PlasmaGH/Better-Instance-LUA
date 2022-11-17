@@ -1,0 +1,15 @@
+return {
+	
+	new = function(instanceName, instanceData)
+		local instance = Instance.new(instanceName)
+		
+		if instanceData then
+			for index, data in instanceData do
+				instance[index] = data
+			end
+		end
+		
+		return instance;
+	end,
+	
+}
